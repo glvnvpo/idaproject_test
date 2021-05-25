@@ -2,7 +2,7 @@
   <div :class="$style.product_card">
     <div :class="$style.wrap_1">
       <div :class="$style.rating">
-        <img src="~/assets/imgs/star.svg" />
+        <img src="~assets/imgs/star.svg" />
         <div :class="$style.value" :style="{ '--rating': product.rating }">
           {{ product.rating.toFixed(1) }}
         </div>
@@ -13,7 +13,7 @@
         :alt="product.name + ' фотография'"
       />
       <button :class="$style.btn_basket" @click="addToBasket(product)">
-        <img src="~/assets/imgs/basket_grey.svg" />
+        <img src="~assets/imgs/basket_grey.svg" />
       </button>
     </div>
     <div :class="$style.wrap_2">
