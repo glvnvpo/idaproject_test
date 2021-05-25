@@ -43,9 +43,7 @@ export default {
       !context.route.params.products &&
       context.store.state.activeCategory !== Number
     ) {
-      context.redirect(
-        'catalog/' + context.store.state.activeCategory.toString()
-      )
+      context.redirect('catalog/' + context.store.state.activeCategory)
     }
     return { categories: responseCategories, products: responseProducts }
   },
